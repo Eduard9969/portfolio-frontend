@@ -1,0 +1,18 @@
+import { LabelRow } from '../LabelRow';
+import type { LabelRowProps } from '../LabelRow';
+
+type LabelValueItem = Pick<LabelRowProps, 'label'> & { value: string };
+
+type LabelValueListProps = {
+  items: LabelValueItem[];
+};
+
+export const LabelValueList = ({ items }: LabelValueListProps) => (
+  <ul className="list-none m-0 p-0">
+    {items.map((item, index) => (
+      <li key={index}>
+        <LabelRow label={item.label}>{item.value}</LabelRow>
+      </li>
+    ))}
+  </ul>
+);

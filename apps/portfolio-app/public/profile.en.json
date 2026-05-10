@@ -1,0 +1,126 @@
+{
+  "name": "John Doe",
+  "title": "Full-Stack Developer",
+  "avatar": "https://placehold.co/200x200",
+  "socials": [
+    { "title": "LinkedIn", "url": "#", "icon": "linkedin" },
+    { "title": "Bitbucket", "url": "#", "icon": "bitbucket" },
+    { "title": "GitHub", "url": "#", "icon": "github" }
+  ],
+  "mainSections": [
+    {
+      "type": "timeline",
+      "title": "Experience",
+      "items": [
+        {
+          "period": "2022–Present",
+          "org": "Acme Corp",
+          "role": "Senior Full-Stack Developer",
+          "description": "Leading development of scalable web applications using React, Node.js, and cloud infrastructure."
+        },
+        {
+          "period": "2019–2022",
+          "org": "Tech Studio",
+          "role": "Full-Stack Developer",
+          "description": "Built and maintained client-facing web applications, REST APIs, and internal tooling."
+        },
+        {
+          "period": "2017–2019",
+          "org": "Freelance",
+          "role": "Front-End Developer",
+          "description": "Delivered responsive websites and single-page applications for various clients."
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "title": "Education",
+      "items": [
+        {
+          "period": "2015–2019",
+          "org": "State University",
+          "role": "City, Country",
+          "description": "Bachelor's degree in Computer Science."
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "title": "Projects",
+      "items": [
+        {
+          "period": "2023",
+          "org": "Open Source Project",
+          "role": "Author & Maintainer",
+          "description": "A developer tool for automating repetitive tasks, with 500+ GitHub stars."
+        },
+        {
+          "period": "2021",
+          "org": "Side Project",
+          "role": "Full-Stack Developer",
+          "description": "SaaS application for team productivity, built with React, PostgreSQL, and Docker."
+        }
+      ]
+    }
+  ],
+  "sidebarSections": [
+    {
+      "type": "text",
+      "title": "About",
+      "text": "Hi, I'm John. A passionate developer who loves building great products and solving complex problems."
+    },
+    {
+      "type": "icon-list",
+      "title": "Contacts",
+      "items": [
+        { "text": "City, Country", "icon": "location" },
+        { "text": "+1 234 567 8900", "icon": "phone" },
+        { "text": "@handle", "icon": "telegram" },
+        { "text": "john@example.com", "icon": "email" }
+      ]
+    },
+    {
+      "type": "skill-list",
+      "title": "Skills",
+      "withTooltip": true,
+      "items": [
+        { "name": "TypeScript", "mark": 4 },
+        { "name": "React", "mark": 4 },
+        { "name": "Node.js", "mark": 4 },
+        { "name": "PostgreSQL", "mark": 3 },
+        { "name": "Docker", "mark": 3 },
+        { "name": "Python", "mark": 2 }
+      ]
+    },
+    {
+      "type": "skill-list",
+      "title": "Soft Skills",
+      "withTooltip": true,
+      "items": [
+        { "name": "Git", "mark": 5 },
+        { "name": "Linux", "mark": 4 },
+        { "name": "Figma", "mark": 3 },
+        { "name": "VS Code", "mark": 5 }
+      ]
+    },
+    {
+      "type": "skill-list",
+      "title": "Frameworks",
+      "withTooltip": true,
+      "items": [
+        { "name": "Next.js", "mark": 4 },
+        { "name": "Tailwind CSS", "mark": 4 },
+        { "name": "Express", "mark": 3 },
+        { "name": "Nx", "mark": 3 }
+      ]
+    },
+    {
+      "type": "text-value-list",
+      "title": "Languages",
+      "items": [
+        { "name": "English", "value": "Fluent, C1" },
+        { "name": "Spanish", "value": "Intermediate, B1" }
+      ]
+    }
+  ]
+}

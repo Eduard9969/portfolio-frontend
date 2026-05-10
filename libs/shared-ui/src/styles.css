@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import "@fontsource/lato/400.css";
+@import "@fontsource/lato/700.css";
+
+@source "../src/**/*.{ts,tsx}";
+
+@theme {
+  --color-accent: #EFC68B;
+  --color-photo-bg: #DBDCDD;
+  --color-timeline: #6D6E70;
+  --color-text-primary: #343334;
+  --color-surface: #313742;
+  --color-link: #ff9800;
+  --color-muted: #808080;
+  --color-text-hover: #444444;
+  --color-bg: white;
+  --font-sans: 'Lato', sans-serif;
+}
+
+@keyframes loader-ball-move {
+  0%, 10%  { transform: translateX(0); }
+  90%, 100% { transform: translateX(32px); }
+}
+
+@keyframes loader-rotate {
+  0%, 10%  { transform: rotate(-153deg); }
+  90%, 100% { transform: rotate(0deg); }
+}
+
+@layer components {
+  .loader {
+    position: relative;
+    width: 100px;
+    height: 16px;
+    display: inline-block;
+  }
+  .loader::before,
+  .loader::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: currentColor;
+    box-shadow: 32px 0 currentColor;
+    left: 0;
+    top: 0;
+    animation: loader-ball-move 1s linear infinite;
+  }
+  .loader::after {
+    box-shadow: none;
+    transform-origin: 40px 0;
+    transform: rotate(-153deg);
+    animation: loader-rotate 1s linear infinite;
+  }
+}
+
+@layer base {
+  body {
+    color: var(--color-text-primary);
+    font-size: 16px;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-link);
+  }
+
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
+}

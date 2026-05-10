@@ -1,0 +1,126 @@
+{
+  "name": "John Doe",
+  "title": "Full-Stack разработчик",
+  "avatar": "https://placehold.co/200x200",
+  "socials": [
+    { "title": "LinkedIn", "url": "#", "icon": "linkedin" },
+    { "title": "Bitbucket", "url": "#", "icon": "bitbucket" },
+    { "title": "GitHub", "url": "#", "icon": "github" }
+  ],
+  "mainSections": [
+    {
+      "type": "timeline",
+      "title": "Опыт работы",
+      "items": [
+        {
+          "period": "2022–н.в.",
+          "org": "Acme Corp",
+          "role": "Старший Full-Stack разработчик",
+          "description": "Руководил разработкой масштабируемых веб-приложений на React, Node.js и облачной инфраструктуре."
+        },
+        {
+          "period": "2019–2022",
+          "org": "Tech Studio",
+          "role": "Full-Stack разработчик",
+          "description": "Разрабатывал и поддерживал клиентские веб-приложения, REST API и внутренние инструменты."
+        },
+        {
+          "period": "2017–2019",
+          "org": "Фриланс",
+          "role": "Front-End разработчик",
+          "description": "Создавал адаптивные сайты и SPA для различных клиентов."
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "title": "Образование",
+      "items": [
+        {
+          "period": "2015–2019",
+          "org": "Государственный университет",
+          "role": "Город, Страна",
+          "description": "Бакалавр информатики."
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "title": "Проекты",
+      "items": [
+        {
+          "period": "2023",
+          "org": "Open Source проект",
+          "role": "Автор и мейнтейнер",
+          "description": "Инструмент для автоматизации повторяющихся задач, 500+ звёзд на GitHub."
+        },
+        {
+          "period": "2021",
+          "org": "Пет-проект",
+          "role": "Full-Stack разработчик",
+          "description": "SaaS-приложение для командной продуктивности на React, PostgreSQL и Docker."
+        }
+      ]
+    }
+  ],
+  "sidebarSections": [
+    {
+      "type": "text",
+      "title": "Обо мне",
+      "text": "Привет, я Джон. Увлечённый разработчик, которому нравится создавать классные продукты и решать сложные задачи."
+    },
+    {
+      "type": "icon-list",
+      "title": "Контакты",
+      "items": [
+        { "text": "Город, Страна", "icon": "location" },
+        { "text": "+1 234 567 8900", "icon": "phone" },
+        { "text": "@handle", "icon": "telegram" },
+        { "text": "john@example.com", "icon": "email" }
+      ]
+    },
+    {
+      "type": "skill-list",
+      "title": "Навыки",
+      "withTooltip": true,
+      "items": [
+        { "name": "TypeScript", "mark": 4 },
+        { "name": "React", "mark": 4 },
+        { "name": "Node.js", "mark": 4 },
+        { "name": "PostgreSQL", "mark": 3 },
+        { "name": "Docker", "mark": 3 },
+        { "name": "Python", "mark": 2 }
+      ]
+    },
+    {
+      "type": "skill-list",
+      "title": "Soft Skills",
+      "withTooltip": true,
+      "items": [
+        { "name": "Git", "mark": 5 },
+        { "name": "Linux", "mark": 4 },
+        { "name": "Figma", "mark": 3 },
+        { "name": "VS Code", "mark": 5 }
+      ]
+    },
+    {
+      "type": "skill-list",
+      "title": "Фреймворки",
+      "withTooltip": true,
+      "items": [
+        { "name": "Next.js", "mark": 4 },
+        { "name": "Tailwind CSS", "mark": 4 },
+        { "name": "Express", "mark": 3 },
+        { "name": "Nx", "mark": 3 }
+      ]
+    },
+    {
+      "type": "text-value-list",
+      "title": "Языки",
+      "items": [
+        { "name": "Английский", "value": "Свободно, C1" },
+        { "name": "Испанский", "value": "Средний, B1" }
+      ]
+    }
+  ]
+}

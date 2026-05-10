@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compileOnSave": false,
+  "files": [],
+  "references": [
+    {
+      "path": "./apps/portfolio-app-e2e"
+    },
+    {
+      "path": "./apps/portfolio-app"
+    },
+    {
+      "path": "./libs/shared-ui"
+    },
+    {
+      "path": "./libs/i18n"
+    }
+  ]
+}

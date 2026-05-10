@@ -1,0 +1,11 @@
+{
+  "name": "@org/portfolio-app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@org/i18n": "workspace:*",
+    "@org/shared-ui": "workspace:*",
+    "@tanstack/react-query": "^5.0.0",
+    "zod": "^4.5.4"
+  }
+}
