@@ -1,4 +1,5 @@
 import type { QueryFunctionContext } from '@tanstack/react-query';
+import { QueryClient } from '@tanstack/react-query';
 import { profileQueryOptions } from './profileQueryOptions';
 
 vi.mock('../../environments/environment', () => ({
@@ -18,6 +19,7 @@ const makeContext = (queryKey: ReturnType<typeof profileQueryOptions>['queryKey'
   queryKey,
   signal: new AbortController().signal,
   meta: undefined,
+  client: new QueryClient(),
 });
 
 describe('profileQueryOptions', () => {
@@ -38,7 +40,7 @@ describe('profileQueryOptions', () => {
     vi.mocked(fetch).mockResolvedValue({ ok: true, json: async () => mockProfile } as Response);
 
     const options = profileQueryOptions('ru');
-    await options.queryFn(makeContext(options.queryKey));
+    await options.queryFn!(makeContext(options.queryKey));
 
     expect(vi.mocked(fetch)).toHaveBeenCalledWith('/profile.ru.json');
   });
@@ -47,7 +49,7 @@ describe('profileQueryOptions', () => {
     vi.mocked(fetch).mockResolvedValue({ ok: true, json: async () => mockProfile } as Response);
 
     const options = profileQueryOptions('en');
-    const result = await options.queryFn(makeContext(options.queryKey));
+    const result = await options.queryFn!(makeContext(options.queryKey));
 
     expect(result).toEqual(mockProfile);
   });
@@ -56,7 +58,7 @@ describe('profileQueryOptions', () => {
     vi.mocked(fetch).mockResolvedValue({ ok: false, status: 404 } as Response);
 
     const options = profileQueryOptions('en');
-    await expect(options.queryFn(makeContext(options.queryKey))).rejects.toThrow(
+    await expect(options.queryFn!(makeContext(options.queryKey))).rejects.toThrow(
       'Failed to load profile: 404'
     );
   });
@@ -65,7 +67,7 @@ describe('profileQueryOptions', () => {
     vi.mocked(fetch).mockResolvedValue({ ok: true, json: async () => ({ name: 'John' }) } as Response);
 
     const options = profileQueryOptions('en');
-    await expect(options.queryFn(makeContext(options.queryKey))).rejects.toThrow();
+    await expect(options.queryFn!(makeContext(options.queryKey))).rejects.toThrow();
   });
 
   it('throws when a section has an unknown type', async () => {
@@ -73,6 +75,6 @@ describe('profileQueryOptions', () => {
     vi.mocked(fetch).mockResolvedValue({ ok: true, json: async () => invalid } as Response);
 
     const options = profileQueryOptions('en');
-    await expect(options.queryFn(makeContext(options.queryKey))).rejects.toThrow();
+    await expect(options.queryFn!(makeContext(options.queryKey))).rejects.toThrow();
   });
 });
