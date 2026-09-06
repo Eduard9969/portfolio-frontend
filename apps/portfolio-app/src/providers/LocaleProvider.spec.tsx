@@ -6,7 +6,7 @@ vi.mock('../environments/environment', () => ({
 }));
 
 vi.mock('@org/i18n', () => ({
-  I18nProvider: ({ children }: { children: React.ReactNode }) => <>{children}</>,
+  I18nProvider: ({ children }: { children: React.ReactNode }) => children as React.ReactElement,
 }));
 
 describe('useLocale', () => {
@@ -15,7 +15,7 @@ describe('useLocale', () => {
       useLocale();
       return null;
     };
-    vi.spyOn(console, 'error').mockImplementation(() => {});
+    vi.spyOn(console, 'error').mockImplementation(() => undefined);
     expect(() => render(<Consumer />)).toThrow('useLocale must be used within LocaleProvider');
     vi.restoreAllMocks();
   });

@@ -46,7 +46,7 @@ describe('AppContent', () => {
 
   it('shows error boundary fallback when there is an error', async () => {
     vi.mocked(useProfile).mockReturnValue({ profile: null, isPending: false, error: new Error('fail') });
-    vi.spyOn(console, 'error').mockImplementation(() => {});
+    vi.spyOn(console, 'error').mockImplementation(() => undefined);
     const { findByText } = render(
       <ErrorBoundary fallback={<p>Something went wrong</p>}>
         <AppContent />

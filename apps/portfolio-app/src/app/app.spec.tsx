@@ -20,7 +20,7 @@ describe('App', () => {
 
   it('shows translated error message when AppContent throws', () => {
     MockAppContent.mockImplementation(() => { throw new Error('render error'); });
-    vi.spyOn(console, 'error').mockImplementation(() => {});
+    vi.spyOn(console, 'error').mockImplementation(() => undefined);
     const { getByText } = render(<App />);
     expect(getByText('Something went wrong. Please reload the page.')).toBeTruthy();
   });

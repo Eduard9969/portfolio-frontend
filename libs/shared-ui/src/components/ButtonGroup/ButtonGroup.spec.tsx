@@ -8,13 +8,13 @@ const items = [
 
 describe('ButtonGroup', () => {
   it('renders all item labels', () => {
-    const { getByText } = render(<ButtonGroup items={items} current="en" onChange={() => {}} />);
+    const { getByText } = render(<ButtonGroup items={items} current="en" onChange={() => undefined} />);
     expect(getByText('En')).toBeTruthy();
     expect(getByText('Ru')).toBeTruthy();
   });
 
   it('current item is disabled', () => {
-    const { getByText } = render(<ButtonGroup items={items} current="en" onChange={() => {}} />);
+    const { getByText } = render(<ButtonGroup items={items} current="en" onChange={() => undefined} />);
     expect((getByText('En').closest('button') as HTMLButtonElement).disabled).toBe(true);
     expect((getByText('Ru').closest('button') as HTMLButtonElement).disabled).toBe(false);
   });
