@@ -36,4 +36,5 @@ jobs:
 
       - run: pnpm exec playwright install --with-deps chromium
 
-      - run: pnpm nx run-many -t lint test build typecheck e2e-ci -- --project=chromium
+      - run: pnpm nx run-many -t lint test build typecheck
+      - run: pnpm nx run @org/portfolio-app-e2e:e2e -- --project=chromium
