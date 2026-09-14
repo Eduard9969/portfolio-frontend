@@ -1,9 +1,9 @@
 import { LabelRow } from '../LabelRow';
 import type { LabelRowProps } from '../LabelRow';
 
-type LabelValueItem = Pick<LabelRowProps, 'label'> & { value: string };
+export type LabelValueItem = Pick<LabelRowProps, 'label'> & { value: string };
 
-type LabelValueListProps = {
+export type LabelValueListProps = {
   items: LabelValueItem[];
 };
 

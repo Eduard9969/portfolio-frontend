@@ -1,7 +1,7 @@
 {
   "name": "John Doe",
   "title": "Full-Stack Developer",
-  "avatar": "https://placehold.co/200x200",
+  "avatar": "/avatar-placeholder.svg",
   "socials": [
     { "title": "LinkedIn", "url": "#", "icon": "linkedin" },
     { "title": "Bitbucket", "url": "#", "icon": "bitbucket" },

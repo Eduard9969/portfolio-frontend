@@ -1,6 +1,6 @@
 import { TimelineItem, type TimelineItemProps } from '../TimelineItem/TimelineItem';
 
-type TimelineProps = {
+export type TimelineProps = {
   items: TimelineItemProps[];
 };
 

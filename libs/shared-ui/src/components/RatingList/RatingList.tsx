@@ -3,9 +3,9 @@ import { DotRating } from '../DotRating';
 import type { LabelRowProps } from '../LabelRow';
 import type { DotRatingProps } from '../DotRating';
 
-type RatingItem = Pick<LabelRowProps, 'label'> & Pick<DotRatingProps, 'mark'>;
+export type RatingItem = Pick<LabelRowProps, 'label'> & Pick<DotRatingProps, 'mark'>;
 
-type RatingListProps = {
+export type RatingListProps = {
   items: RatingItem[];
   max?: number;
 };

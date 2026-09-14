@@ -18,7 +18,7 @@ const SectionHead = ({ title, withLine = false }: SectionHeadProps) => (
   </div>
 );
 
-type SectionProps = {
+export type SectionProps = {
   title: string;
   children: ReactNode;
   withLine?: boolean;
