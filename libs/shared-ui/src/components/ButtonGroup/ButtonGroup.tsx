@@ -1,11 +1,11 @@
 import { Button } from '../Button';
 
-type ButtonItem<T extends string> = {
+export type ButtonItem<T extends string> = {
   value: T;
   label: string;
 };
 
-type ButtonGroupProps<T extends string> = {
+export type ButtonGroupProps<T extends string> = {
   items: ButtonItem<T>[];
   current: T;
   onChange: (value: T) => void;

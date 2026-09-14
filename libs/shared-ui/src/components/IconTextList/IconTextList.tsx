@@ -1,7 +1,7 @@
 import { IconTextRow } from '../IconTextRow';
 import type { IconTextRowProps } from '../IconTextRow';
 
-type IconTextListProps = {
+export type IconTextListProps = {
   items: IconTextRowProps[];
 };
 

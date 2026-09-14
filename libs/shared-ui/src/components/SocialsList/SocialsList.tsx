@@ -1,7 +1,7 @@
 import { SocialLink } from '../SocialLink';
 import type { SocialLinkProps } from '../SocialLink';
 
-type SocialsListProps = {
+export type SocialsListProps = {
   items: SocialLinkProps[];
 };
 

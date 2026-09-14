@@ -2,7 +2,7 @@ import { Popover } from '../Popover';
 import type { PopoverProps } from '../Popover';
 import { RatingList } from '../RatingList';
 
-type RatingTooltipProps = {
+export type RatingTooltipProps = {
   legendLabel: string;
   labels: string[];
   align?: PopoverProps['align'];

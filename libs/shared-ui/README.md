@@ -1,6 +1,6 @@
 # @org/shared-ui
 
-A React component library built on Tailwind CSS v4. Provides 19 components covering layout, display, interactive, and data-presentation patterns. All components are exported from the `@org/shared-ui` package.
+A React component library built on Tailwind CSS v4. Provides 19 components covering layout, display, interactive, and data-presentation patterns. Every component and its corresponding `*Props` type (e.g. `AvatarProps`, `TimelineItemProps`) are exported from the `@org/shared-ui` package, so consumers can type wrapper components without redeclaring shapes.
 
 ## Table of Contents
 

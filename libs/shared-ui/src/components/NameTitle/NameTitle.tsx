@@ -1,9 +1,9 @@
-type NameBlockProps = {
+export type NameTitleProps = {
   name: string;
   title: string;
 };
 
-export const NameTitle = ({ name, title }: NameBlockProps) => (
+export const NameTitle = ({ name, title }: NameTitleProps) => (
   <div className="bg-accent p-3 w-full">
     <div className="text-center relative border-4 border-current py-5 px-4">
       <h1 className="relative z-[2] text-5xl font-bold text-text-primary uppercase m-0 max-sm:text-[2rem]">

@@ -11,7 +11,7 @@ import {
 } from '@fortawesome/free-regular-svg-icons';
 import { faCircleInfo, faMapLocation, faPhone } from '@fortawesome/free-solid-svg-icons';
 
-type IconName =
+export type IconName =
   | 'linkedin'
   | 'bitbucket'
   | 'github'

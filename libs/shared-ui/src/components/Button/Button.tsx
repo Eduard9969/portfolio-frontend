@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 
-type ButtonProps = {
+export type ButtonProps = {
   active?: boolean;
   onClick?: () => void;
   children: ReactNode;
