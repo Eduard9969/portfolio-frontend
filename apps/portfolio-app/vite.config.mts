@@ -6,6 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig(() => ({
   root: import.meta.dirname,
   cacheDir: '../../node_modules/.vite/apps/portfolio-app',
+  base: process.env.VITE_BASE_PATH ?? '/',
   server: {
     port: 4200,
     host: 'localhost',

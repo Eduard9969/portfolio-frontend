@@ -20,6 +20,7 @@ An open-source Nx monorepo powering a personal portfolio web app. The app render
 - [Profile data](#profile-data)
 - [Available scripts](#available-scripts)
 - [Testing](#testing)
+- [Deployment](#deployment)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -70,6 +71,7 @@ The app is configured through Vite env variables. Create a `.env` file in `apps/
 | `VITE_LOCALES` | `en` | Comma-separated locale codes available in the app |
 | `VITE_PROFILE_URL` | `/profile.{locale}.json` | URL template for profile data — `{locale}` is replaced at runtime |
 | `VITE_PROFILES_PREFETCH` | `false` | Set to `true` to prefetch all locale profiles on initial load |
+| `VITE_BASE_PATH` | `/` | Vite [`base`](https://vite.dev/config/shared-options.html#base) path for the built assets — set to `/<repo-name>/` when serving from a subpath, e.g. a GitHub Pages project site |
 
 Example `.env` for a bilingual setup:
 
@@ -121,6 +123,12 @@ pnpm nx run @org/portfolio-app-e2e:e2e              # Playwright e2e tests
 ```
 
 CI (`.github/workflows/ci.yml`) runs lint, unit tests, build, typecheck, and the Chromium e2e suite on every push and pull request.
+
+## Deployment
+
+`.github/workflows/deploy-pages.yml` builds `portfolio-app` and deploys it to GitHub Pages on every push to `main` (and on manual dispatch). It sets `VITE_BASE_PATH` and `VITE_PROFILE_URL` to the repository's Pages subpath so assets and profile data resolve correctly from `https://<owner>.github.io/<repo-name>/`.
+
+Enable it once per repository under **Settings → Pages → Source: GitHub Actions**.
 
 ## Contributing
 
