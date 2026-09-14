@@ -56,3 +56,7 @@ function DateDisplay({ date }: { date: Date }) {
 ## Supported locales
 
 `en`, `ru` — add new translations in `libs/i18n/src/translations/`.
+
+## License
+
+MIT — see the [repository license](../../LICENSE).

@@ -447,3 +447,7 @@ Run Storybook to explore and develop components in isolation:
 ```bash
 pnpm nx storybook shared-ui
 ```
+
+## License
+
+MIT — see the [repository license](../../LICENSE).
