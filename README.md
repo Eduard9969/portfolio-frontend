@@ -7,6 +7,8 @@
 
 An open-source Nx monorepo powering a personal portfolio web app. The app renders a profile from a JSON source — a local file or an API response — and validates it against a schema before rendering. The profile shape drives dynamic section rendering, and the UI is fully localizable.
 
+![Portfolio app screenshot](docs/screenshot.png)
+
 ## Table of Contents
 
 - [Features](#features)
