@@ -9,10 +9,12 @@ export const SkillListSectionRenderer: FC<SkillListSection> = ({ items, withTool
   return (
     <>
       {withTooltip && (
-        <RatingTooltip
-          legendLabel={translate('rating.legend')}
-          labels={[translate('rating.1'), translate('rating.2'), translate('rating.3'), translate('rating.4'), translate('rating.5')]}
-        />
+        <div className="print:hidden">
+          <RatingTooltip
+            legendLabel={translate('rating.legend')}
+            labels={[translate('rating.1'), translate('rating.2'), translate('rating.3'), translate('rating.4'), translate('rating.5')]}
+          />
+        </div>
       )}
       <RatingList items={items.map((item) => ({ label: item.name, mark: item.mark }))} />
     </>
