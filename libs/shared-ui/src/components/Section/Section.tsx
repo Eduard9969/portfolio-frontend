@@ -6,7 +6,7 @@ type SectionHeadProps = {
 };
 
 const SectionHead = ({ title, withLine = false }: SectionHeadProps) => (
-  <div className="mt-9 mb-9 [section:first-child_&]:mt-4">
+  <div className="mt-9 mb-9 [section:first-child_&]:mt-4 print:break-after-avoid">
     <h3 className="flex items-center">
       <span className="text-2xl font-bold border border-[var(--section-head-border,currentColor)] px-2.5 py-1.5 leading-none inline-block uppercase tracking-wide">
         {title}
