@@ -47,9 +47,9 @@ export const AppContent = () => {
 
   return (
     <Suspense fallback={<Loader />}>
-      <div className="max-w-[1200px] w-full mx-auto relative py-6 lg:py-25">
+      <div className="max-w-[1200px] w-full mx-auto relative py-6 lg:py-25 print:py-0">
         <LocaleSwitcher />
-        <div className="bg-white shadow-[1px_36px_50px_0_rgba(0,0,0,0.27)]">
+        <div className="bg-white shadow-[1px_36px_50px_0_rgba(0,0,0,0.27)] print:shadow-none">
           <Profile profile={profile} />
         </div>
       </div>
