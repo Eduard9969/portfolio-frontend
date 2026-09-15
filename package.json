@@ -67,8 +67,8 @@
   },
   "packageManager": "pnpm@11.0.9",
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
     "react-intl": "^10.1.5"
   }
 }
