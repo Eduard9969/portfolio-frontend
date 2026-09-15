@@ -26,7 +26,7 @@ export const Header = ({ name, title, avatar, socials }: HeaderProps) => (
       className={`${avatar ? 'w-[70%]' : 'w-full'} min-h-96 bg-accent flex flex-col justify-center items-center text-center p-8 max-lg:w-full max-lg:min-h-0`}
     >
       <NameTitle name={name} title={title} />
-      <div className="mt-11">
+      <div className="mt-11 print:hidden">
         <SocialsList
           items={socials
             .map((social) => ({

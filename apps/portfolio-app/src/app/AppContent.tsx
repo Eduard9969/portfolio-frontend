@@ -19,7 +19,7 @@ const LocaleSwitcher = () => {
   }
 
   return (
-    <div className="text-right mb-1.5">
+    <div className="text-right mb-1.5 print:hidden">
       <ButtonGroup
         current={locale}
         onChange={setLocale}
