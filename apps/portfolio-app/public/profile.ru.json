@@ -1,7 +1,7 @@
 {
   "name": "John Doe",
   "title": "Full-Stack разработчик",
-  "avatar": "/avatar-placeholder.svg",
+  "avatar": "avatar-placeholder.svg",
   "socials": [
     { "title": "LinkedIn", "url": "#", "icon": "linkedin" },
     { "title": "Bitbucket", "url": "#", "icon": "bitbucket" },
