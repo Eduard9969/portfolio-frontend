@@ -68,6 +68,7 @@ All visual tokens are CSS custom properties defined in `styles.css`. Override th
 |---|---|---|
 | `--color-accent` | `#EFC68B` | Accent color — dot fills, borders |
 | `--color-photo-bg` | `#DBDCDD` | Avatar placeholder background |
+| `--color-rating-empty` | `#DBDCDD` | `DotRating` unfilled dot color (print) |
 | `--color-timeline` | `#6D6E70` | Timeline line color |
 | `--color-text-primary` | `#343334` | Primary text color |
 | `--color-surface` | `#313742` | Dark surface background (sidebar) |
