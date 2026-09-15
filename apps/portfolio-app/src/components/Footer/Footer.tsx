@@ -7,7 +7,7 @@ const SOURCE_URL = 'https://github.com/Eduard9969/portfolio-frontend';
 export const Footer = () => {
   const translate = useTranslate();
   return (
-    <footer className="absolute bottom-2.5 left-8 text-[#2f4f4f] text-xs max-lg:text-white">
+    <footer className="absolute bottom-2.5 left-8 text-[#2f4f4f] text-xs max-lg:text-white print:hidden">
       <p>
         <a href={AUTHOR_URL} rel="nofollow noreferrer" target="_blank">
           {translate('footer.inspired_by', { author: AUTHOR_NAME })}

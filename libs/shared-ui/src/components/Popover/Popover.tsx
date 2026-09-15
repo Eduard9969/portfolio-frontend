@@ -6,14 +6,15 @@ export type PopoverProps = {
   trigger: string;
   children: ReactNode;
   align?: 'left' | 'right';
+  className?: string;
 };
 
-export const Popover = ({ trigger, children, align = 'right' }: PopoverProps) => {
+export const Popover = ({ trigger, children, align = 'right', className = '' }: PopoverProps) => {
   const [open, setOpen] = useState(false);
   const isRight = align === 'right';
 
   return (
-    <div className="relative text-sm -mt-4">
+    <div className={`relative text-sm -mt-4 ${className}`}>
       <div className={`flex ${isRight ? 'justify-end' : 'justify-start'}`}>
         <button
           type="button"

@@ -2,3 +2,9 @@ body {
   min-width: 320px;
   background: #EBEBED;
 }
+
+@media print {
+  body {
+    background: white;
+  }
+}

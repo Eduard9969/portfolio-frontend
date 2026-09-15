@@ -29,7 +29,7 @@ export const Section = ({
   children,
   withLine = false,
 }: SectionProps) => (
-  <section>
+  <section className="print:break-inside-avoid">
     <SectionHead title={title} withLine={withLine} />
     {children}
   </section>

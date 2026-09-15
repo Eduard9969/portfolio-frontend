@@ -10,6 +10,7 @@ export const SkillListSectionRenderer: FC<SkillListSection> = ({ items, withTool
     <>
       {withTooltip && (
         <RatingTooltip
+          className="print:hidden"
           legendLabel={translate('rating.legend')}
           labels={[translate('rating.1'), translate('rating.2'), translate('rating.3'), translate('rating.4'), translate('rating.5')]}
         />

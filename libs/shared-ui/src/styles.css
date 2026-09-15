@@ -7,6 +7,7 @@
 @theme {
   --color-accent: #EFC68B;
   --color-photo-bg: #DBDCDD;
+  --color-rating-empty: #DBDCDD;
   --color-timeline: #6D6E70;
   --color-text-primary: #343334;
   --color-surface: #313742;
