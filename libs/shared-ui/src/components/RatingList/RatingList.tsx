@@ -13,7 +13,7 @@ export type RatingListProps = {
 export const RatingList = ({ items, max }: RatingListProps) => (
   <ul className="list-none m-0 p-0">
     {items.map((item, index) => (
-      <li key={index}>
+      <li key={index} className="print:break-inside-avoid">
         <LabelRow label={item.label}>
           <DotRating mark={item.mark} max={max} />
         </LabelRow>

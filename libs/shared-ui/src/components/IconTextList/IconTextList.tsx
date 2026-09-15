@@ -8,7 +8,7 @@ export type IconTextListProps = {
 export const IconTextList = ({ items }: IconTextListProps) => (
   <ul className="list-none m-0 p-0">
     {items.map((item, index) => (
-      <li key={index}>
+      <li key={index} className="print:break-inside-avoid">
         <IconTextRow {...item} />
       </li>
     ))}

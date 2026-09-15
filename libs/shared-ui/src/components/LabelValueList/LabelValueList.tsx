@@ -10,7 +10,7 @@ export type LabelValueListProps = {
 export const LabelValueList = ({ items }: LabelValueListProps) => (
   <ul className="list-none m-0 p-0">
     {items.map((item, index) => (
-      <li key={index}>
+      <li key={index} className="print:break-inside-avoid">
         <LabelRow label={item.label}>{item.value}</LabelRow>
       </li>
     ))}
