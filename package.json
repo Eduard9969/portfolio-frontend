@@ -63,12 +63,12 @@
     "tslib": "^2.3.0",
     "typescript": "~5.9.2",
     "vite": "^8.0.0",
-    "vitest": "~4.1.0"
+    "vitest": "~4.1.11"
   },
   "packageManager": "pnpm@11.0.9",
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
     "react-intl": "^10.1.5"
   }
 }
